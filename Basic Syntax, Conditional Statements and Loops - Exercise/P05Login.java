@@ -13,7 +13,7 @@ public class P05Login {
         String password = "";
 
 
-// всяка позиция в текста --> от последната (дължината -1 ) ; към първата (0) знака е обърнат ; декрементация
+// всяка позиция в текста --> от последната (дължината -1 ) ; към първата (0) знака е обърнат ; декрем
         for (int i = username.length() - 1 ; i >= 0 ; i --) {
             char currentSymbol = username.charAt(i);
             password += currentSymbol;
@@ -21,13 +21,11 @@ public class P05Login {
         // знаем каква ни е паролата
 
         String enteredPassword = scanner.nextLine();
-        int countFailedTry = 0 ;// броя неуспешни опити
-        //повтаряме: въвеждаме някаква парола
-        //стоп : enteredPassword ==  password
-        // продължаваме: enteredPassword != password
+        int countFailedTry = 0 ;
+       
 
         while (!enteredPassword.equals(password)){
-            //грешно въведена password
+            
             countFailedTry++;
             if (countFailedTry == 4){
                 System.out.printf  ("User %s blocked!",username);
@@ -38,7 +36,7 @@ public class P05Login {
 
             enteredPassword = scanner.nextLine();
         }
-        //вярна password
+       
         if (enteredPassword.equals(password)){
             System.out.printf("User %s logged in.",username );
         }
