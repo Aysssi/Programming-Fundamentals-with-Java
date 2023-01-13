@@ -6,7 +6,7 @@ public class P06StrongNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int number = Integer.parseInt(scanner.nextLine());// стойността на чуслото , което ше модифицирам
+        int number = Integer.parseInt(scanner.nextLine());// стойността на числото , което ше модифицирам
         int startNumber = number;
 
         //за всяка цифра
