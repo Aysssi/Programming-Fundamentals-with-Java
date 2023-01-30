@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class P04ArrayRotation {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        //1. входни данни: масив от числа и брой ротациите
+        //1. входни данни: масив от числа и брой ротации
         int [] numbersArr = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int rotations = Integer.parseInt(scanner.nextLine()); // бр. ротациите
 
